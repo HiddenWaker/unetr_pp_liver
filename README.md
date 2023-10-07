@@ -61,6 +61,5 @@ conda activate (put your name of virtual enviorment)
 cd (your address of folder)\unetr_plus_plus-main
 cd (your address of folder)\unetr_plus_plus-main\training_scripts
 sh run_training_synapse.sh
-
 ```
 
