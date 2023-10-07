@@ -21,7 +21,7 @@ This model is from UNETR++, implemented for whole liver segmentation. (CT images
   
 - Dataset contains annotation of the whole liver.
 
-- We 
+- We changed the format of the data to fit the structure of the model. Code for format changing and split (to train and validation) is in [`see_many_files.ipynb`] 
 
 # Training
 
