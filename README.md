@@ -7,7 +7,7 @@ This model is from UNETR++, implemented for whole liver segmentation. (CT images
 ---
 
 <p align="center" width="100%">
-<img src="https://github.com/HiddenWaker/unetr_pp_liver/assets/132364831/92a0e1fe-8ebf-4a9e-bdb5-c63b150d6c87" alt="IA3 icon" style="width: 1073px; height:400px; display: block; margin: auto; border-radius: 50%;"/>
+<img src="https://github.com/HiddenWaker/unetr_pp_liver/assets/132364831/92a0e1fe-8ebf-4a9e-bdb5-c63b150d6c87" alt="IA3 icon" style="width: 1073px; height:360px; display: block; margin: auto; border-radius: 50%;"/>
 </p>
 
 ---
