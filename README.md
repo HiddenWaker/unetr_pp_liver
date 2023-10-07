@@ -21,26 +21,39 @@ This model is from UNETR++, implemented for whole liver segmentation. (CT images
   
 - Dataset contains annotation of the whole liver.
 
-- We changed the format of the data to fit the structure of the model. Code for format changing and split (to train and validation) is in [`see_many_files.ipynb`] 
+- We randomly extract 50 nii.gz file from the existing dataset.
 
-# Training
+- We changed the format of the data to fit the structure of the model. Code for format changing and split (to train and validation) is in [`see_many_files.ipynb`]
+
+
 
 # Installation
-The code is tested with PyTorch 1.11.0 and CUDA 11.3. After cloning the repository, follow the below steps for installation,
+After cloning the repository, install Anoconda3, follow the below steps for installation,
+(If all are pre-installed, you can skip this step.)
 
-- Create and activate conda environment
-```
-conda create --name unetr_pp python=3.8
-conda activate unetr_pp
-```
+- Download Anaconda
 
-- Install PyTorch and torchvision
+- Install PyTorch and torchvision 
 ```
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
 ```
 
-- Install PyTorch and torchvision
+- Install other dependencies
 ```
 pip install -r requirements.txt
+```
+
+# Training
+
+For training, you should run through Anaconda, follow the below steps for installation.
+
+- create virtual enviorment. You can name the virtual environment as you want. 
+
+```
+conda activate (put your name of virtual enviorment)
+cd (your address of folder)\unetr_plus_plus-main
+cd (your address of folder)\unetr_plus_plus-main\training_scripts
+sh run_training_synapse.sh
+
 ```
 
