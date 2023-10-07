@@ -18,5 +18,29 @@ This model is from UNETR++, implemented for whole liver segmentation. (CT images
 # Dataset
 
 - To quickly check the performance of the UNETR++ model, we used public data produced by Tian et al. https://github.com/GLCUnet/dataset
-- 
+  
 - Dataset contains annotation of the whole liver.
+
+- We 
+
+# Training
+
+# Installation
+The code is tested with PyTorch 1.11.0 and CUDA 11.3. After cloning the repository, follow the below steps for installation,
+
+- Create and activate conda environment
+```
+conda create --name unetr_pp python=3.8
+conda activate unetr_pp
+```
+
+- Install PyTorch and torchvision
+```
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
+```
+
+- Install PyTorch and torchvision
+```
+pip install -r requirements.txt
+```
+
