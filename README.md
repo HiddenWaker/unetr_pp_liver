@@ -21,7 +21,7 @@ To quickly check the performance of the UNETR++ model, we used public data produ
 
 ---
 <p align="left" width="50%">
-<img src="https://github.com/HiddenWaker/unetr_pp_liver/assets/132364831/4eabfb8f-e2c5-42ec-b1b6-8c78b34b1140" alt="IA3 icon" style="width: 600px; height:500px; display: block; margin: auto; border-radius: 50%;"/>
+<img src="https://github.com/HiddenWaker/unetr_pp_liver/assets/132364831/4eabfb8f-e2c5-42ec-b1b6-8c78b34b1140" alt="IA3 icon" style="width: 500px; height:400px; display: block; margin: auto; border-radius: 50%;"/>
 </p>
 
 ---
