@@ -62,7 +62,7 @@ cd (your address of folder)\unetr_plus_plus-main
 cd (your address of folder)\unetr_plus_plus-main\training_scripts
 sh run_training_synapse.sh
 ```
-- The results of the train are as follows
+- The results of the training are as follows
 
 Batch size | Train loss | Validation loss | Dice score
 -- | -- | -- | --
