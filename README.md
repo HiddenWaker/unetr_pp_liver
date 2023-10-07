@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 For training, you should run through Anaconda, follow the below steps for installation.
 
-- create virtual enviorment. You can name the virtual environment as you want. 
+- Create virtual enviorment. You can name the virtual environment as you want. 
 
 ```
 conda activate (put your name of virtual enviorment)
@@ -62,4 +62,8 @@ cd (your address of folder)\unetr_plus_plus-main
 cd (your address of folder)\unetr_plus_plus-main\training_scripts
 sh run_training_synapse.sh
 ```
-
+- The results of the train are as follows
+Batch size | Train loss | Validation loss | Dice score
+-- | -- | -- | --
+2 | 0.2832 | 0.3127 | 0.9488
+**8 (+preprocessing)** | **0.0639** | **0.0896** | **0.9613**
