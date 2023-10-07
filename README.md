@@ -17,7 +17,14 @@ This model is from UNETR++, implemented for whole liver segmentation. (CT images
 
 # Dataset
 
-- To quickly check the performance of the UNETR++ model, we used public data produced by Tian et al. https://github.com/GLCUnet/dataset
+To quickly check the performance of the UNETR++ model, we used public data produced by Tian et al. https://github.com/GLCUnet/dataset
+
+---
+<p align="left" width="50%">
+<img src="https://github.com/HiddenWaker/unetr_pp_liver/assets/132364831/4eabfb8f-e2c5-42ec-b1b6-8c78b34b1140" alt="IA3 icon" style="width: 600px; height:500px; display: block; margin: auto; border-radius: 50%;"/>
+</p>
+
+---
   
 - Dataset contains annotation of the whole liver.
 
