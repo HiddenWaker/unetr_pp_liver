@@ -32,6 +32,8 @@ To quickly check the performance of the UNETR++ model, we used public data produ
 
 - We changed the format of the data to fit the structure of the model. Code for format changing and split (to train and validation) is in [`see_many_files.ipynb`]
 
+- Modified dataset in our UNETR++ for using training is in https://mybox.naver.com/share/list?shareKey=cH_3J5dbnH0kBHWhDIO-1IwswZmfeAnxDSIarIMYfY8A
+
 
 
 # Installation
