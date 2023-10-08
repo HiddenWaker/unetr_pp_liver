@@ -54,10 +54,12 @@ pip install -r requirements.txt
 
 For training, you should run through Anaconda, follow the below steps for installation.
 
-- Create virtual enviorment. You can name the virtual environment as you want. 
+- First, create folder 'unetr_plus_plus-main' on your PC.
+
+- run Anaconda and create virtual enviorment. You can name the virtual environment as you want. 
 
 ```
-conda activate (put your name of virtual enviorment)
+conda activate (put your name of virtual environment)
 cd (put your address of folder)\unetr_plus_plus-main
 cd (put your address of folder)\unetr_plus_plus-main\training_scripts
 sh run_training_synapse.sh
