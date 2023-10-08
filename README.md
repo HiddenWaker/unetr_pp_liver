@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 For training, you should run through Anaconda, follow the below steps for installation.
 
-- First, create folder 'unetr_plus_plus-main' on your PC.
+- First, create folder 'unetr_plus_plus-main' on your PC, then upload files into the folder.
 
 - run Anaconda and create virtual enviorment. You can name the virtual environment as you want. 
 
