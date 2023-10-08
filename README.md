@@ -58,7 +58,7 @@ For training, you should run through Anaconda, follow the below steps for instal
 
 - First, create folder 'unetr_plus_plus-main' on your PC, then upload files into the folder.
 
-- run Anaconda and create virtual enviorment. You can name the virtual environment as you want. 
+- Run Anaconda and create virtual enviorment. You can name the virtual environment as you want. 
 
 ```
 conda activate (put your name of virtual environment)
