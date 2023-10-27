@@ -33,6 +33,8 @@ To quickly check the performance of the UNETR++ model, we used public data produ
 - We changed the format of the data to fit the structure of the model. Code for format changing and split (to train and validation) is in [`see_many_files.ipynb`]
 
 - Modified dataset in our UNETR++ for using training is in https://mybox.naver.com/share/list?shareKey=cH_3J5dbnH0kBHWhDIO-1IwswZmfeAnxDSIarIMYfY8A
+  
+- Create a 'unetr_plus_plus-main' folder on your PC, then upload the dataset in the folder. 
 
 
 
@@ -56,7 +58,8 @@ pip install -r requirements.txt
 
 For training, you should run through Anaconda, follow the below steps for installation.
 
-- First, create folder 'unetr_plus_plus-main' on your PC, then upload files into the folder.
+- First, upload all files into the 'unetr_plus_plus-main' folder, the same folder that contains the dataset 
+
 
 - Run Anaconda and create virtual enviorment. You can name the virtual environment as you want. 
 
