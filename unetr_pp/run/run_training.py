@@ -44,7 +44,7 @@ def main():
     parser.add_argument("-val", "--validation_only", help="use this if you want to only run the validation",
                         action="store_true")
     parser.add_argument("-c", "--continue_training", help="use this if you want to continue a training",
-                        action="store_true")
+                        action="store_true",default= False)
     parser.add_argument("-p", help="plans identifier. Only change this if you created a custom experiment planner",
                         default=default_plans_identifier, required=False)
     parser.add_argument("--use_compressed_data", default=False, action="store_true",
@@ -145,7 +145,7 @@ def main():
         trainer.find_lr()
     else:
         if not validation_only:
-            if True: #args.continue_training:
+            if args.continue_training==True:
                 # -c was set, continue a previous training and ignore pretrained weights
                 trainer.load_latest_checkpoint()
             else:
