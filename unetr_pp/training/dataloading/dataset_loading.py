@@ -45,11 +45,13 @@ def convert_to_npy(args):
     if not isinstance(args, tuple):
         key = "data"
         nii_files = args
-        print(nii_files)
+
     else:
         nii_files, key = args
     #print(mha_file)
     #print(mha_file[:-3])
+    
+
     if not isfile(nii_files[:-6] + "npy"):
         
         # ToDo: 9/12: .nii.gz format으로 바꾸기
@@ -63,8 +65,9 @@ def convert_to_npy(args):
         # 2. Voxel spacing 1.0mm changing
         try:
             name = nii_files.split('\\')[-1]
-            gt_path = '../DATASET_Synapse/unetr_pp_raw/unetr_pp_raw_data/Task02_Synapse/Task002_Synapse/seg_gt/'+name
+            gt_path = name
 
+            
             a = tio.ScalarImage(nii_files)
             resample = tio.Resample()  # default is 1 mm isotropic
             resampled = resample(a)
@@ -72,43 +75,46 @@ def convert_to_npy(args):
             a = np.array(a)
             
             gt = tio.ScalarImage(gt_path)
+            
             resample = tio.Resample()  # default is 1 mm isotropic
             resampled = resample(gt)
             gt = resampled.data[0]
             gt = np.array(gt)
             
             a = (a-np.min(a))/(np.max(a)-np.min(a)) # normalize
+
+
+            a = np.transpose(a, (2,0,1))
+            gt = np.transpose(gt, (2,0,1))
+
+
+          
             
+            #gt_index = np.where(gt != 0, 1, 0)
+            #a = a[gt_index]
+            
+            # npy format 생성
+            a = a[np.newaxis, ...]
+            gt = gt[np.newaxis, ...]
+            final = np.concatenate([a, gt], axis=0) # (2, x, y, x)
+        
+            np.save(nii_files[:-6] + "npy", final)
+            '''
+            count = 0
+            flag_stop = False
+            while not flag_stop:
+                try:
+                    np.save(nii_files[:-6] + "npy", final)
+                    flag_stop = True # stop!
+                except:
+                    count += 1
+                    if count == 10:
+                        print("error file:", nii_files)
+                        raise Exception("Error")
+            '''
         except Exception as e:
             print("error file:",name)
             print(e)    
-        
-        # TODO: 9/24
-        a = np.transpose(a, (2,0,1))
-        gt = np.transpose(gt, (2,0,1))
-
-        # TODO: 10/22 Whole liver masking
-        #gt_index = np.where(gt != 0, 1, 0)
-        #a = a[gt_index]
-        
-        # npy format 생성
-        a = a[np.newaxis, ...]
-        gt = gt[np.newaxis, ...]
-        final = np.concatenate([a, gt], axis=0) # (2, x, y, x)
-        np.save(nii_files[:-6] + "npy", final)
-        '''
-        count = 0
-        flag_stop = False
-        while not flag_stop:
-            try:
-                np.save(nii_files[:-6] + "npy", final)
-                flag_stop = True # stop!
-            except:
-                count += 1
-                if count == 10:
-                    print("error file:", nii_files)
-                    raise Exception("Error")
-        '''
 
 def resample_img(itk_image, out_spacing=[1.0, 1.0, 1.0], is_label=False):
     # resample images to 1mm spacing with simple itk
