@@ -37,7 +37,7 @@ To quickly check the performance of the UNETR++ model, we used public data produ
 - Create a 'unetr_plus_plus-main' folder on your PC
 
 <p align="left" width="50%">
-<img src="https://github.com/HiddenWaker/unetr_pp_liver/assets/132364831/98ee8c97-cff9-47ad-8bed-0e7a52efc535" alt="IA3 icon" style="width: 300px; height:200px; display: block; margin: auto; border-radius: 50%;"/>
+<img src="https://github.com/HiddenWaker/unetr_pp_liver/assets/132364831/98ee8c97-cff9-47ad-8bed-0e7a52efc535" alt="IA3 icon" style="width: 250px; height:200px; display: block; margin: auto; border-radius: 50%;"/>
 </p>
 
 -  Then upload the dataset in the folder. 
