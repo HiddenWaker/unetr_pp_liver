@@ -61,7 +61,11 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url http
 ```
 pip install -r requirements.txt
 ```
+or 
 
+```
+pip install argparse numpy batchgenerators==0.21 matplotlib typing sklearn scikit-learn tqdm fvcore scikit-image simpleitk tifffile medpy pandas scipy nibabel timm monai einops torchio kornia
+```
 # Training
 
 For training, you should run through Anaconda, follow the below steps for installation.
